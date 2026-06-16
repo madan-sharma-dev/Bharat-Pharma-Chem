@@ -1,0 +1,403 @@
+<style>
+    #madan-bharat-pharma-header,
+    #madan-bharat-pharma-header * {
+        box-sizing: border-box;
+    }
+
+    #madan-bharat-pharma-header {
+        position: fixed;
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(94%, 1400px);
+        max-width: 1400px;
+        z-index: 2147483647;
+        margin: 0;
+        font-family: inherit;
+    }
+
+
+
+    .madan-bharat-pharma-header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        min-height: 72px;
+
+        padding: 10px 24px;
+
+        background: rgba(255, 255, 255, .94);
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        border: 1px solid rgba(255, 255, 255, .4);
+
+        border-radius: 48px;
+
+        box-shadow:
+            0 10px 40px rgba(0, 0, 0, .08);
+
+        transition: .4s ease;
+    }
+
+
+
+    .madan-bharat-pharma-logo-box {
+        width: 210px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .madan-bharat-pharma-logo {
+        height: 42px;
+        width: auto;
+        max-width: 190px;
+
+        object-fit: contain;
+        display: block;
+        border: 0;
+        box-shadow: none;
+    }
+
+
+
+    .madan-bharat-pharma-nav {
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: clamp(18px, 2.4vw, 36px);
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .madan-bharat-pharma-nav a {
+        position: relative;
+
+        text-decoration: none;
+
+        color: #111827;
+
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+
+        transition: .3s ease;
+    }
+
+
+    .madan-bharat-pharma-nav a:hover {
+        color: #F58220;
+    }
+
+
+
+    .madan-bharat-pharma-nav a::after {
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+        bottom: -8px;
+
+        width: 0;
+        height: 3px;
+
+        background: #F58220;
+
+        border-radius: 50px;
+
+        transition: .3s ease;
+    }
+
+    .madan-bharat-pharma-nav a:hover::after {
+        width: 100%;
+    }
+
+
+
+    .madan-bharat-pharma-nav a.madan-bharat-pharma-active {
+        color: #F58220;
+    }
+
+    .madan-bharat-pharma-nav a.madan-bharat-pharma-active::after {
+        width: 100%;
+    }
+
+
+    .madan-bharat-pharma-header-btn {
+        width: 210px;
+        flex: 0 0 auto;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+   
+
+    .madan-bharat-pharma-header-btn a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 12px 22px;
+
+        background: #F58220;
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.2;
+        white-space: nowrap;
+
+        border-radius: 50px;
+
+        transition: .3s ease;
+    }
+
+    .madan-bharat-pharma-header-btn a:hover {
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 10px 25px rgba(245, 130, 32, .35);
+    }
+
+
+
+    .madan-bharat-pharma-header-scrolled .madan-bharat-pharma-header-wrapper {
+        background: #ffffff;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, .08);
+    }
+
+
+    /* Mobile Menu Button */
+
+    .madan-bharat-pharma-menu-toggle {
+        display: none;
+
+        width: 42px;
+        height: 42px;
+        padding: 9px;
+        border: 0;
+        border-radius: 50%;
+        background: rgba(46, 49, 146, .08);
+        appearance: none;
+        -webkit-appearance: none;
+
+        cursor: pointer;
+    }
+
+    .madan-bharat-pharma-menu-toggle span {
+        display: block;
+
+        width: 100%;
+        height: 3px;
+
+        margin: 4px 0;
+
+        background: #2E3192;
+
+        border-radius: 20px;
+
+        transition: .3s ease;
+    }
+
+    @media screen and (min-width:783px) {
+        body.admin-bar #madan-bharat-pharma-header {
+            top: 48px;
+        }
+    }
+
+    @media screen and (max-width:782px) {
+        body.admin-bar #madan-bharat-pharma-header {
+            top: 54px;
+        }
+    }
+
+    @media(max-width:1100px) {
+        .madan-bharat-pharma-logo-box,
+        .madan-bharat-pharma-header-btn {
+            width: 170px;
+        }
+
+        .madan-bharat-pharma-logo {
+            height: 38px;
+            max-width: 160px;
+        }
+
+        .madan-bharat-pharma-nav a {
+            font-size: 15px;
+        }
+    }
+
+    @media(max-width:991px) {
+        #madan-bharat-pharma-header {
+            top: 12px;
+            width: calc(100% - 24px);
+        }
+
+        .madan-bharat-pharma-header-wrapper {
+            min-height: 64px;
+            padding: 9px 14px 9px 18px;
+        }
+
+        .madan-bharat-pharma-logo {
+            height: 36px;
+            max-width: 155px;
+        }
+
+        .madan-bharat-pharma-nav {
+            position: absolute;
+
+            top: calc(100% + 12px);
+            left: 0;
+
+            width: 100%;
+
+            background: #ffffff;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            padding: 24px;
+
+            border-radius: 20px;
+
+            display: none;
+
+            box-shadow:
+                0 15px 40px rgba(0, 0, 0, .08);
+        }
+
+        .madan-bharat-pharma-nav.madan-bharat-pharma-show {
+            display: flex;
+        }
+
+        .madan-bharat-pharma-menu-toggle {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .madan-bharat-pharma-header-btn {
+            display: none;
+        }
+
+        .madan-bharat-pharma-logo-box {
+            width: auto;
+            min-width: 0;
+        }
+    }
+
+    @media(max-width:480px) {
+        #madan-bharat-pharma-header {
+            top: 8px;
+            width: calc(100% - 16px);
+        }
+
+        .madan-bharat-pharma-header-wrapper {
+            min-height: 58px;
+            padding: 8px 10px 8px 14px;
+            border-radius: 34px;
+        }
+
+        .madan-bharat-pharma-logo {
+            height: 32px;
+            max-width: 135px;
+        }
+
+        .madan-bharat-pharma-menu-toggle {
+            width: 38px;
+            height: 38px;
+            padding: 8px;
+        }
+
+        .madan-bharat-pharma-nav {
+            gap: 16px;
+            padding: 20px;
+        }
+    }
+</style>
+
+
+<header id="madan-bharat-pharma-header">
+
+    <div class="madan-bharat-pharma-header-wrapper">
+
+        <div class="madan-bharat-pharma-logo-box">
+
+            <img src="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png"
+                alt="Bharat Pharma Chem"
+                class="madan-bharat-pharma-logo">
+
+        </div>
+
+        <nav class="madan-bharat-pharma-nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <div class="madan-bharat-pharma-header-btn">
+
+            <a href="contact.html#madan-bharat-pharma-enquiry">
+                Get Quote
+            </a>
+
+        </div>
+
+        <button class="madan-bharat-pharma-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+<script>
+    (function () {
+        function initBharatPharmaHeader() {
+            const header = document.getElementById("madan-bharat-pharma-header");
+            if (!header) return;
+
+            const toggle = header.querySelector(".madan-bharat-pharma-menu-toggle");
+            const nav = header.querySelector(".madan-bharat-pharma-nav");
+            if (!toggle || !nav) return;
+
+            toggle.addEventListener("click", function () {
+                const isOpen = nav.classList.toggle("madan-bharat-pharma-show");
+                toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+            });
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initBharatPharmaHeader);
+        } else {
+            initBharatPharmaHeader();
+        }
+    }());
+</script>

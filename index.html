@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bharat Pharma Chem | Supplier, Trader & Dealer</title>
+
+    <link rel="icon" type="image/png"
+        href="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png">
+    <link rel="apple-touch-icon"
+        href="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --madan-bharat-pharma-blue: #2E3192;
+            --madan-bharat-pharma-orange: #F58220;
+            --madan-bharat-pharma-dark: #0f172a;
+            --madan-bharat-pharma-light: #f8fafc;
+            --madan-bharat-pharma-white: #ffffff;
+            --madan-bharat-pharma-gray: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #334155;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: #f58220;
+            opacity: .04;
+            top: -250px;
+            right: -250px;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: #2E3192;
+            opacity: .03;
+            bottom: -300px;
+            left: -300px;
+            z-index: -1;
+        }
+
+        .madan-bharat-pharma-container {
+            width: 90%;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        section {
+            padding: 120px 0;
+        }
+
+        .madan-bharat-pharma-section-title {
+            font-size: 48px;
+            font-weight: 800;
+            text-align: center;
+            color: var(--madan-bharat-pharma-blue);
+            margin-bottom: 15px;
+        }
+
+        .madan-bharat-pharma-section-subtitle {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            color: #64748b;
+        }
+
+        .madan-bharat-pharma-divider {
+            width: 90px;
+            height: 5px;
+            background: var(--madan-bharat-pharma-orange);
+            margin: 25px auto 60px;
+            border-radius: 20px;
+        }
+
+        .madan-bharat-pharma-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 35px;
+            background: var(--madan-bharat-pharma-orange);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 60px;
+            transition: .4s;
+        }
+
+        .madan-bharat-pharma-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(245, 130, 32, .25);
+        }
+
+        .madan-bharat-pharma-card {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(15, 23, 42, .08);
+            transition: .4s;
+            height: 100%;
+        }
+
+        .madan-bharat-pharma-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .madan-bharat-pharma-card h3 {
+            color: var(--madan-bharat-pharma-blue);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .madan-bharat-pharma-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .madan-bharat-pharma-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        #madan-bharat-pharma-header,
+        #madan-bharat-pharma-header * {
+            box-sizing: border-box;
+        }
+
+        #madan-bharat-pharma-header {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: min(94%, 1400px);
+            max-width: 1400px;
+            z-index: 2147483647;
+            margin: 0;
+            font-family: inherit;
+        }
+
+        .madan-bharat-pharma-header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 72px;
+            padding: 10px 24px;
+            background: rgba(255, 255, 255, .94);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, .4);
+            border-radius: 48px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, .08);
+            transition: .4s ease;
+        }
+
+        .madan-bharat-pharma-logo-box {
+            width: 210px;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .madan-bharat-pharma-header-logo {
+            height: 42px;
+            width: auto;
+            max-width: 190px;
+            object-fit: contain;
+            display: block;
+            border: 0;
+            box-shadow: none;
+        }
+
+        .madan-bharat-pharma-nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(18px, 2.4vw, 36px);
+            margin: 0;
+            padding: 0;
+        }
+
+        .madan-bharat-pharma-nav a {
+            position: relative;
+            text-decoration: none;
+            color: #111827;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            white-space: nowrap;
+            transition: .3s ease;
+        }
+
+        .madan-bharat-pharma-nav a:hover {
+            color: var(--madan-bharat-pharma-orange);
+        }
+
+        .madan-bharat-pharma-nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 0;
+            height: 3px;
+            background: var(--madan-bharat-pharma-orange);
+            border-radius: 50px;
+            transition: .3s ease;
+        }
+
+        .madan-bharat-pharma-nav a:hover::after,
+        .madan-bharat-pharma-nav a.madan-bharat-pharma-active::after {
+            width: 100%;
+        }
+
+        .madan-bharat-pharma-nav a.madan-bharat-pharma-active {
+            color: var(--madan-bharat-pharma-orange);
+        }
+
+        .madan-bharat-pharma-header-btn {
+            width: 210px;
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .madan-bharat-pharma-header-btn a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            background: var(--madan-bharat-pharma-orange);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.2;
+            white-space: nowrap;
+            border-radius: 50px;
+            transition: .3s ease;
+        }
+
+        .madan-bharat-pharma-header-btn a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(245, 130, 32, .35);
+        }
+
+        .madan-bharat-pharma-menu-toggle {
+            display: none;
+            width: 42px;
+            height: 42px;
+            padding: 9px;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(46, 49, 146, .08);
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+
+        .madan-bharat-pharma-menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            margin: 4px 0;
+            background: var(--madan-bharat-pharma-blue);
+            border-radius: 20px;
+            transition: .3s ease;
+        }
+
+        @media screen and (min-width:783px) {
+            body.admin-bar #madan-bharat-pharma-header {
+                top: 48px;
+            }
+        }
+
+        @media screen and (max-width:782px) {
+            body.admin-bar #madan-bharat-pharma-header {
+                top: 54px;
+            }
+        }
+
+        @media(max-width:1100px) {
+
+            .madan-bharat-pharma-logo-box,
+            .madan-bharat-pharma-header-btn {
+                width: 170px;
+            }
+
+            .madan-bharat-pharma-header-logo {
+                height: 38px;
+                max-width: 160px;
+            }
+
+            .madan-bharat-pharma-nav a {
+                font-size: 15px;
+            }
+        }
+
+        #madan-bharat-pharma-hero {
+
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(rgba(18, 28, 90, .88),
+                    rgba(18, 28, 90, .88)),
+                url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=2369&auto=format&fit=crop');
+
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .madan-bharat-pharma-hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .madan-bharat-pharma-badge {
+
+            display: inline-flex;
+
+            padding: 10px 20px;
+
+            background: rgba(245, 130, 32, .12);
+
+            border: 1px solid rgba(245, 130, 32, .4);
+
+            border-radius: 50px;
+
+            color: #F58220;
+
+            font-weight: 600;
+
+            margin-bottom: 25px;
+        }
+
+        .madan-bharat-pharma-hero-title {
+
+            font-size: 72px;
+
+            font-weight: 800;
+
+            line-height: 1.1;
+
+            color: white;
+
+            margin-bottom: 25px;
+        }
+
+        .madan-bharat-pharma-hero-title span {
+            color: #F58220;
+        }
+
+        .madan-bharat-pharma-hero-text {
+            font-size: 18px;
+            color: #e2e8f0;
+            margin-bottom: 35px;
+            max-width: 700px;
+        }
+
+        .madan-bharat-pharma-logo-card {
+
+            background: rgba(255, 255, 255, .12);
+
+            backdrop-filter: blur(20px);
+
+            border: 1px solid rgba(255, 255, 255, .15);
+
+            padding: 40px;
+
+            border-radius: 35px;
+
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .25);
+
+            position: relative;
+        }
+
+        .madan-bharat-pharma-logo-card::before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: #F58220;
+            opacity: .15;
+            border-radius: 50%;
+            top: -70px;
+            right: -70px;
+        }
+
+        .madan-bharat-pharma-logo {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .madan-bharat-pharma-hero-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .madan-bharat-pharma-stat-box {
+            color: white;
+        }
+
+        .madan-bharat-pharma-stat-box h2 {
+            font-size: 40px;
+            color: #F58220;
+        }
+
+        @media(max-width:991px) {
+            #madan-bharat-pharma-header {
+                top: 12px;
+                width: calc(100% - 24px);
+            }
+
+            .madan-bharat-pharma-header-wrapper {
+                min-height: 64px;
+                padding: 9px 14px 9px 18px;
+            }
+
+            .madan-bharat-pharma-header-logo {
+                height: 36px;
+                max-width: 155px;
+            }
+
+            .madan-bharat-pharma-nav {
+                position: absolute;
+                top: calc(100% + 12px);
+                left: 0;
+                width: 100%;
+                background: #ffffff;
+                flex-direction: column;
+                gap: 20px;
+                padding: 24px;
+                border-radius: 20px;
+                display: none;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+            }
+
+            .madan-bharat-pharma-nav.madan-bharat-pharma-show {
+                display: flex;
+            }
+
+            .madan-bharat-pharma-menu-toggle {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .madan-bharat-pharma-header-btn {
+                display: none;
+            }
+
+            .madan-bharat-pharma-logo-box {
+                width: auto;
+                min-width: 0;
+            }
+
+            .madan-bharat-pharma-hero-grid,
+            .madan-bharat-pharma-grid-3,
+            .madan-bharat-pharma-grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            .madan-bharat-pharma-hero-title {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+
+        }
+
+        @media(max-width:480px) {
+            #madan-bharat-pharma-header {
+                top: 8px;
+                width: calc(100% - 16px);
+            }
+
+            .madan-bharat-pharma-header-wrapper {
+                min-height: 58px;
+                padding: 8px 10px 8px 14px;
+                border-radius: 34px;
+            }
+
+            .madan-bharat-pharma-header-logo {
+                height: 32px;
+                max-width: 135px;
+            }
+
+            .madan-bharat-pharma-menu-toggle {
+                width: 38px;
+                height: 38px;
+                padding: 8px;
+            }
+
+            .madan-bharat-pharma-nav {
+                gap: 16px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="madan-bharat-pharma-header">
+        <div class="madan-bharat-pharma-header-wrapper">
+            <div class="madan-bharat-pharma-logo-box">
+                <img src="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png"
+                    alt="Bharat Pharma Chem" class="madan-bharat-pharma-header-logo">
+            </div>
+
+            <nav class="madan-bharat-pharma-nav">
+                <a href="#madan-bharat-pharma-hero" class="madan-bharat-pharma-active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="madan-bharat-pharma-header-btn">
+                <a href="contact.html#madan-bharat-pharma-enquiry">Get Quote</a>
+            </div>
+
+            <button class="madan-bharat-pharma-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="madan-bharat-pharma-hero">
+
+        <div class="madan-bharat-pharma-container">
+
+            <div class="madan-bharat-pharma-hero-grid">
+
+                <div>
+
+                    <div class="madan-bharat-pharma-badge">
+                        ISO 9001:2015 Certified • WHO-GMP Certified
+                    </div>
+
+                    <h1 class="madan-bharat-pharma-hero-title">
+                        Leading <span>Supplier, Trader & Dealer</span>
+                        of Specialty Chemicals
+                    </h1>
+
+                    <p class="madan-bharat-pharma-hero-text">
+
+                        Bharat Pharma Chem is one of the leading Chemical Supplying, Trading & Dealing organizations
+                        specializing in Solvents, Intermediates, Pharmaceuticals, Agrochemicals, Dyes & Pigments, Phase
+                        Transfer Catalysts, Specialty Chemicals and Organic Chemicals.
+
+                        Through our strong sourcing network, technical expertise and global partnerships, we provide
+                        dependable chemical solutions to customers across India and international markets.
+
+                    </p>
+
+                    <a href="#" class="madan-bharat-pharma-btn">
+                        Get Free Consultation
+                    </a>
+
+                    <div class="madan-bharat-pharma-hero-stats">
+
+                        <div class="madan-bharat-pharma-stat-box">
+                            <h2>71+</h2>
+                            <p>Products</p>
+                        </div>
+
+                        <div class="madan-bharat-pharma-stat-box">
+                            <h2>100%</h2>
+                            <p>Quality Focus</p>
+                        </div>
+
+                        <div class="madan-bharat-pharma-stat-box">
+                            <h2>24/7</h2>
+                            <p>Support</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <div class="madan-bharat-pharma-logo-card">
+
+                        <img src="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png"
+                            alt="Bharat Pharma Chem" class="madan-bharat-pharma-logo">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="madan-bharat-pharma-about">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 class="madan-bharat-pharma-section-title">
+                About Bharat Pharma Chem
+            </h2>
+
+            <p class="madan-bharat-pharma-section-subtitle">
+                Trusted sourcing partner for pharmaceutical, agrochemical and specialty chemical industries.
+            </p>
+
+            <div class="madan-bharat-pharma-divider"></div>
+
+            <div class="madan-bharat-pharma-card">
+
+                <p>
+
+                    Established with an objective to actively promote healthy and safe living, Bharat Pharma Chem has
+                    developed strong strategic alliances at national and international levels.
+
+                    Our extensive sourcing network assists us in achieving sustainable growth while supporting
+                    consumers, exporters, industrial buyers and multinational organizations.
+
+                    We are recognized as a trusted supplier, trader and dealer of chemical ingredients, pharmaceutical
+                    intermediates and specialty chemicals.
+
+                    Bharat Pharma Chem is a respected brand that markets products through approved manufacturing
+                    partners while focusing on sourcing excellence, quality assurance, technical support and customer
+                    satisfaction.
+
+                </p>
+
+            </div>
+
+            <br><br>
+
+            <div class="madan-bharat-pharma-grid-4">
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Global Sourcing
+                    </h3>
+
+                    <p>
+                        Strong supplier network across domestic and international markets.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Quality Assurance
+                    </h3>
+
+                    <p>
+                        Products sourced through approved and quality-focused partner companies.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Technical Support
+                    </h3>
+
+                    <p>
+                        Professional guidance for product selection and industrial applications.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Reliable Delivery
+                    </h3>
+
+                    <p>
+                        Efficient supply chain ensuring timely product availability.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY CHOOSE US -->
+
+    <section id="madan-bharat-pharma-why-us">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 class="madan-bharat-pharma-section-title">
+                Why Choose Bharat Pharma Chem
+            </h2>
+
+            <p class="madan-bharat-pharma-section-subtitle">
+                Delivering trusted sourcing solutions with a commitment to quality and customer satisfaction.
+            </p>
+
+            <div class="madan-bharat-pharma-divider"></div>
+
+            <div class="madan-bharat-pharma-grid-3">
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Trusted Brand
+                    </h3>
+
+                    <p>
+                        Known for reliability, transparency and professional business practices.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Global Partnerships
+                    </h3>
+
+                    <p>
+                        Extensive network of approved manufacturers and industry suppliers.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Customer First
+                    </h3>
+
+                    <p>
+                        Focused on customer satisfaction through responsive support and service.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Competitive Pricing
+                    </h3>
+
+                    <p>
+                        Cost-effective sourcing solutions without compromising quality.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Technical Expertise
+                    </h3>
+
+                    <p>
+                        Experienced professionals supporting diverse industrial requirements.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Timely Delivery
+                    </h3>
+
+                    <p>
+                        Strong logistics support for uninterrupted supply management.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMPANY STATISTICS -->
+
+    <section id="madan-bharat-pharma-company-stats" style="
+background:linear-gradient(135deg,#2E3192,#1e236e);
+color:white;
+">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 style="
+color:white;
+text-align:center;
+font-size:48px;
+font-weight:800;
+margin-bottom:60px;
+">
+                Our Strengths
+            </h2>
+
+            <div class="madan-bharat-pharma-grid-4">
+
+                <div class="madan-bharat-pharma-card" style="background:rgba(255,255,255,.08);color:white;">
+
+                    <h3 style="color:#F58220;font-size:42px;">
+                        71+
+                    </h3>
+
+                    <p>
+                        Chemical Products
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card" style="background:rgba(255,255,255,.08);color:white;">
+
+                    <h3 style="color:#F58220;font-size:42px;">
+                        ISO
+                    </h3>
+
+                    <p>
+                        Certified Standards
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card" style="background:rgba(255,255,255,.08);color:white;">
+
+                    <h3 style="color:#F58220;font-size:42px;">
+                        24/7
+                    </h3>
+
+                    <p>
+                        Customer Support
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card" style="background:rgba(255,255,255,.08);color:white;">
+
+                    <h3 style="color:#F58220;font-size:42px;">
+                        100%
+                    </h3>
+
+                    <p>
+                        Quality Commitment
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- RESEARCH & DEVELOPMENT -->
+
+    <section id="madan-bharat-pharma-rnd">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 class="madan-bharat-pharma-section-title">
+                Research & Development
+            </h2>
+
+            <p class="madan-bharat-pharma-section-subtitle">
+                Innovation-driven sourcing solutions supported by technical expertise and market intelligence.
+            </p>
+
+            <div class="madan-bharat-pharma-divider"></div>
+
+            <div class="madan-bharat-pharma-grid-3">
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Technical Research
+                    </h3>
+
+                    <p>
+                        Our technical team continuously evaluates advanced chemical products, intermediates and
+                        specialty chemicals to meet evolving industrial requirements.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Product Development Support
+                    </h3>
+
+                    <p>
+                        We work closely with approved manufacturing partners and industry specialists to identify
+                        innovative sourcing opportunities and market-ready solutions.
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Quality Evaluation
+                    </h3>
+
+                    <p>
+                        Dedicated product verification, technical analysis and quality assessment processes help ensure
+                        reliable performance and customer satisfaction.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="madan-bharat-pharma-card" style="
+background:linear-gradient(135deg,#2E3192,#1e236e);
+color:white;
+">
+
+                <h3 style="color:#F58220;">
+                    Research Driven Growth
+                </h3>
+
+                <p>
+
+                    BHARAT PHARMA CHEM is driven by expertise in Research & Development and market analysis. Our focus
+                    is on identifying high-quality chemical products, evaluating new technologies and supporting
+                    customers with reliable sourcing solutions.
+
+                    Through continuous research, technical evaluation and industry collaboration, we help customers
+                    access products that meet modern industrial requirements.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUALITY POLICY -->
+
+    <section id="madan-bharat-pharma-quality-policy" style="background:#f8fafc;">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 class="madan-bharat-pharma-section-title">
+                Quality Policy
+            </h2>
+
+            <p class="madan-bharat-pharma-section-subtitle">
+                Committed to quality, reliability and customer satisfaction.
+            </p>
+
+            <div class="madan-bharat-pharma-divider"></div>
+
+            <div class="madan-bharat-pharma-card" style="
+margin-bottom:40px;
+border-left:6px solid #F58220;
+">
+
+                <p>
+
+                    We, at <strong>BHARAT PHARMA CHEM</strong>, are committed to achieving complete customer
+                    satisfaction through excellent products and dependable services.
+
+                    As a trusted <strong>Supplier, Trader & Dealer</strong>, we source and market quality products
+                    through our approved partner network while maintaining high standards of safety, reliability and
+                    performance.
+
+                    Our objective is to provide customers with consistent product availability, technical support and
+                    timely delivery while maintaining international quality benchmarks.
+
+                </p>
+
+            </div>
+
+            <div class="madan-bharat-pharma-grid-3">
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>Green Project Technologies</h3>
+                    <p>
+                        Promoting sustainable and responsible sourcing practices wherever possible.
+                    </p>
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>Continuous Improvement</h3>
+                    <p>
+                        Ongoing enhancement of systems, processes and customer service standards.
+                    </p>
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>Technical Development Support</h3>
+                    <p>
+                        Continuous support through technical evaluation and product assessment.
+                    </p>
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>Quality Verification</h3>
+                    <p>
+                        Selection of quality products verified according to applicable industry standards.
+                    </p>
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>International Compliance</h3>
+                    <p>
+                        Products evaluated in line with ISO, GMP, IS and international quality expectations.
+                    </p>
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+                    <h3>Customer Satisfaction</h3>
+                    <p>
+                        Dedicated commitment toward long-term customer relationships and service excellence.
+                    </p>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="madan-bharat-pharma-card">
+
+                <p>
+
+                    All products marketed by Bharat Pharma Chem are sourced from reputed manufacturing partners and
+                    evaluated according to applicable quality standards.
+
+                    We consider our human resources and customer satisfaction among our greatest strengths. Our trained
+                    professionals continuously upgrade their technical knowledge and market expertise to deliver
+                    superior sourcing solutions and support.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+
+    <section id="madan-bharat-pharma-cta" style="
+background:
+linear-gradient(
+135deg,
+#2E3192,
+#1c2165
+);
+color:white;
+">
+
+        <div class="madan-bharat-pharma-container">
+
+            <div style="
+text-align:center;
+max-width:900px;
+margin:auto;
+">
+
+                <h2 style="
+font-size:52px;
+font-weight:800;
+margin-bottom:20px;
+color:white;
+">
+                    Looking For Reliable Chemical Supply Solutions?
+                </h2>
+
+                <p style="
+font-size:18px;
+opacity:.9;
+margin-bottom:35px;
+">
+
+                    Partner with Bharat Pharma Chem for dependable sourcing, technical support and quality-focused
+                    chemical solutions.
+
+                </p>
+
+                <a href="#" class="madan-bharat-pharma-btn">
+                    Request A Quote
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT PREVIEW -->
+
+    <section id="madan-bharat-pharma-contact-preview">
+
+        <div class="madan-bharat-pharma-container">
+
+            <h2 class="madan-bharat-pharma-section-title">
+                Get In Touch
+            </h2>
+
+            <p class="madan-bharat-pharma-section-subtitle">
+                Contact our team for product enquiries and sourcing requirements.
+            </p>
+
+            <div class="madan-bharat-pharma-divider"></div>
+
+            <div class="madan-bharat-pharma-grid-3">
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Call Us
+                    </h3>
+
+                    <p>
+                        +91 7984972452
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        WhatsApp
+                    </h3>
+
+                    <p>
+                        +91 7383555441
+                    </p>
+
+                </div>
+
+                <div class="madan-bharat-pharma-card">
+
+                    <h3>
+                        Email Us
+                    </h3>
+
+                    <p>
+                        info@bharatpharmachemindia.com
+                        <br>
+                        bpcpanoli@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="madan-bharat-pharma-card">
+
+                <h3 style="color:#2E3192;">
+                    Office Address
+                </h3>
+
+                <p>
+
+                    BHARAT PHARMA CHEM<br>
+
+                    Plot No. 2209, Avdhoot Marg,<br>
+
+                    Panoli Industrial Estate,<br>
+
+                    GIDC Panoli – 394116,<br>
+
+                    Ankleshwar, Bharuch,<br>
+
+                    Gujarat, India
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        (function () {
+            function initBharatPharmaHeader() {
+                const header = document.getElementById("madan-bharat-pharma-header");
+                if (!header) return;
+
+                const toggle = header.querySelector(".madan-bharat-pharma-menu-toggle");
+                const nav = header.querySelector(".madan-bharat-pharma-nav");
+                if (!toggle || !nav) return;
+
+                toggle.addEventListener("click", function () {
+                    const isOpen = nav.classList.toggle("madan-bharat-pharma-show");
+                    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+                });
+
+                nav.querySelectorAll("a").forEach(function (link) {
+                    link.addEventListener("click", function () {
+                        nav.classList.remove("madan-bharat-pharma-show");
+                        toggle.setAttribute("aria-expanded", "false");
+                        toggle.setAttribute("aria-label", "Open menu");
+                    });
+                });
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", initBharatPharmaHeader);
+            } else {
+                initBharatPharmaHeader();
+            }
+        }());
+    </script>
+
+</body>
+
+</html>
