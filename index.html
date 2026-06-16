@@ -539,6 +539,91 @@
                 padding: 20px;
             }
         }
+
+        .madan-bharat-pharma-footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 70px 0 24px;
+        }
+
+        .madan-bharat-pharma-footer-grid {
+            display: grid;
+            grid-template-columns: 1.35fr .85fr .9fr 1.1fr;
+            gap: 34px;
+            align-items: start;
+        }
+
+        .madan-bharat-pharma-footer-brand img {
+            width: 190px;
+            max-width: 100%;
+            display: block;
+            margin-bottom: 18px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 8px;
+        }
+
+        .madan-bharat-pharma-footer h3 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .madan-bharat-pharma-footer p,
+        .madan-bharat-pharma-footer a {
+            color: #cbd5e1;
+            font-size: 15px;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .madan-bharat-pharma-footer a:hover {
+            color: #F58220;
+        }
+
+        .madan-bharat-pharma-footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .madan-bharat-pharma-footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 44px;
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        .madan-bharat-pharma-footer-bottom p {
+            font-size: 14px;
+        }
+
+        @media(max-width:991px) {
+            .madan-bharat-pharma-footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .madan-bharat-pharma-footer-bottom {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:640px) {
+            .madan-bharat-pharma-footer {
+                padding: 54px 0 22px;
+            }
+
+            .madan-bharat-pharma-footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
+            .madan-bharat-pharma-footer-brand img {
+                width: 160px;
+            }
+        }
     </style>
 </head>
 
@@ -1145,94 +1230,50 @@ margin-bottom:35px;
         </div>
 
     </section>
-
-    <!-- CONTACT PREVIEW -->
-
-    <section id="madan-bharat-pharma-contact-preview">
-
+    <footer class="madan-bharat-pharma-footer">
         <div class="madan-bharat-pharma-container">
-
-            <h2 class="madan-bharat-pharma-section-title">
-                Get In Touch
-            </h2>
-
-            <p class="madan-bharat-pharma-section-subtitle">
-                Contact our team for product enquiries and sourcing requirements.
-            </p>
-
-            <div class="madan-bharat-pharma-divider"></div>
-
-            <div class="madan-bharat-pharma-grid-3">
-
-                <div class="madan-bharat-pharma-card">
-
-                    <h3>
-                        Call Us
-                    </h3>
-
+            <div class="madan-bharat-pharma-footer-grid">
+                <div class="madan-bharat-pharma-footer-brand">
+                    <img src="https://bharatpharmachemindia.com/wp-content/uploads/2026/06/Screenshot-2026-06-16-at-11.35.12-AM.png"
+                        alt="Bharat Pharma Chem">
                     <p>
-                        +91 7984972452
+                        Trusted supplier, trader and dealer of specialty chemicals, intermediates and Pharma Chem
+                        ingredients for industrial customers.
                     </p>
-
                 </div>
 
-                <div class="madan-bharat-pharma-card">
-
-                    <h3>
-                        WhatsApp
-                    </h3>
-
-                    <p>
-                        +91 7383555441
-                    </p>
-
+                <div class="madan-bharat-pharma-footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
                 </div>
 
-                <div class="madan-bharat-pharma-card">
-
-                    <h3>
-                        Email Us
-                    </h3>
-
-                    <p>
-                        info@bharatpharmachemindia.com
-                        <br>
-                        bpcpanoli@gmail.com
-                    </p>
-
+                <div class="madan-bharat-pharma-footer-col">
+                    <h3>Products</h3>
+                    <a href="products.html">Specialty Chemicals</a>
+                    <a href="products.html">Pharma Intermediates</a>
+                    <a href="products.html">Agrochemical Products</a>
+                    <a href="products.html">Fine Chemicals</a>
                 </div>
 
+                <div class="madan-bharat-pharma-footer-col">
+                    <h3>Contact</h3>
+                    <a href="tel:+917984972452">+91 7984972452</a>
+                    <a href="https://wa.me/917383555441" target="_blank" rel="noopener">WhatsApp: +91 7383555441</a>
+                    <a href="mailto:info@bharatpharmachemindia.com">info@bharatpharmachemindia.com</a>
+                    <a href="mailto:bpcpanoli@gmail.com">bpcpanoli@gmail.com</a>
+                </div>
             </div>
 
-            <br><br>
-
-            <div class="madan-bharat-pharma-card">
-
-                <h3 style="color:#2E3192;">
-                    Office Address
-                </h3>
-
-                <p>
-
-                    BHARAT PHARMA CHEM<br>
-
-                    Plot No. 2209, Avdhoot Marg,<br>
-
-                    Panoli Industrial Estate,<br>
-
-                    GIDC Panoli – 394116,<br>
-
-                    Ankleshwar, Bharuch,<br>
-
-                    Gujarat, India
-
-                </p>
-
+            <div class="madan-bharat-pharma-footer-bottom">
+                <p>&copy; 2026 Bharat Pharma Chem. All Rights Reserved.</p>
+                <p>Plot No. 2209, Avdhoot Marg, Panoli Industrial Estate, GIDC Panoli - 394116, Gujarat, India</p>
             </div>
-
         </div>
-
-    </section>
+    </footer>
 
     <script>
         (function () {
