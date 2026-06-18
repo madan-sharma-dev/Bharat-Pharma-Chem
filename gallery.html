@@ -745,6 +745,50 @@
                 width: 160px;
             }
         }
+
+
+        /* docs  */
+
+        .docs-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 15px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .doc-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .doc-card h3 {
+            margin: 0;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+        }
+
+        .doc-card iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        /* Mobile */
+        @media (max-width:768px) {
+            .docs-section {
+                grid-template-columns: 1fr;
+            }
+
+            .doc-card iframe {
+                height: 450px;
+            }
+        }
     </style>
 </head>
 
@@ -843,6 +887,23 @@
                 </div>
             </div>
         </section>
+
+        <div class="docs-section">
+
+            <div class="doc-card">
+                <h3>Quality Management Certificate</h3>
+                <iframe src="docs/BHARAT PHARMA CHEM QMS (1).pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%"
+                    height="800">
+                </iframe>
+            </div>
+
+            <div class="doc-card">
+                <h3>WHO-GMP</h3>
+                <iframe src="docs/WHO-GMP BHARAT PHARMA CHEM.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%"
+                    height="800"></iframe>
+            </div>
+
+        </div>
 
         <section class="madan-bharat-pharma-section madan-bharat-pharma-section-soft">
             <div class="madan-bharat-pharma-container">
