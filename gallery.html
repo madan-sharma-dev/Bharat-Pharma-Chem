@@ -751,9 +751,7 @@
 
         .docs-section {
             max-width: 1200px;
-            margin: 50px auto;
-            padding: 0 15px;
-
+            margin: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
@@ -763,30 +761,22 @@
             background: #fff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
         }
 
-        .doc-card h3 {
-            margin: 0;
-            padding: 15px 20px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #eee;
-        }
-
-        .doc-card iframe {
+        .doc-card img {
             width: 100%;
-            height: 600px;
-            border: none;
+            display: block;
+            transition: .3s;
         }
 
-        /* Mobile */
-        @media (max-width:768px) {
+        .doc-card img:hover {
+            transform: scale(1.02);
+        }
+
+        @media(max-width:768px) {
             .docs-section {
                 grid-template-columns: 1fr;
-            }
-
-            .doc-card iframe {
-                height: 450px;
             }
         }
     </style>
@@ -892,15 +882,16 @@
 
             <div class="doc-card">
                 <h3>Quality Management Certificate</h3>
-                <iframe src="docs/BHARAT PHARMA CHEM QMS (1).pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%"
-                    height="800">
-                </iframe>
+                <a href="docs/BHARAT PHARMA CHEM QMS (1).pdf" target="_blank">
+                    <img src="images/certificate 1.png" alt="Quality Management Certificate">
+                </a>
             </div>
 
             <div class="doc-card">
                 <h3>WHO-GMP</h3>
-                <iframe src="docs/WHO-GMP BHARAT PHARMA CHEM.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%"
-                    height="800"></iframe>
+                <a href="docs/WHO-GMP BHARAT PHARMA CHEM.pdf" target="_blank">
+                    <img src="images/certificate 2.png" alt="WHO GMP Certificate">
+                </a>
             </div>
 
         </div>
